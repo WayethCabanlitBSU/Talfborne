@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Talfborne - A student game project with medieval/arcane theming">
+  <meta name="theme-color" content="#080608">
+  <title>TALFBORNE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'AsrogGenos';
+      src: url('AsrogGenos.woff2') format('woff2');
+      font-display: swap;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-logo">✦ Talfborne</div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#features"    onclick="closeMenu()">Features</a></li>
+    <li><a href="#screenshots" onclick="closeMenu()">Gallery</a></li>
+    <li><a href="#team"        onclick="closeMenu()">Team</a></li>
+    <li><a href="#download"    onclick="closeMenu()">Download</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-rune"></div>
+  <p class="hero-eyebrow">✦ &nbsp; A Student Game Project &nbsp; ✦</p>
+  <h1 class="hero-title">TALFBORNE</h1>
+  <div class="hero-rule"></div>
+  <p class="hero-tagline">Lorem ipsum dolor &nbsp;—&nbsp; sit amet consectetur</p>
+  <div class="hero-cta">
+    <a href="#download" class="btn btn-gold">Download Now</a>
+    <a href="#features" class="btn btn-ghost">Discover More</a>
+  </div>
+  <div class="scroll-cue"><i></i>Scroll</div>
+</section>
+
+<div class="ornament">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+
+<!-- ══ FEATURES ══ -->
+<section id="features">
+  <div class="section">
+    <div class="s-head reveal">
+      <span class="s-label">What Awaits</span>
+      <h2 class="s-title">Game Features</h2>
+      <div class="s-rule"></div>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card reveal">
+        <span class="feat-glyph">🗺️</span>
+        <h3 class="feat-name">Feature Title</h3>
+        <p class="feat-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="feat-card reveal">
+        <span class="feat-glyph">⚔️</span>
+        <h3 class="feat-name">Feature Title</h3>
+        <p class="feat-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="feat-card reveal">
+        <span class="feat-glyph">📜</span>
+        <h3 class="feat-name">Feature Title</h3>
+        <p class="feat-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="feat-card reveal">
+        <span class="feat-glyph">🔮</span>
+        <h3 class="feat-name">Feature Title</h3>
+        <p class="feat-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="feat-card reveal">
+        <span class="feat-glyph">🏰</span>
+        <h3 class="feat-name">Feature Title</h3>
+        <p class="feat-desc">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas volutpat.</p>
+      </div>
+      <div class="feat-card reveal">
+        <span class="feat-glyph">🎵</span>
+        <h3 class="feat-name">Feature Title</h3>
+        <p class="feat-desc">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; proin vel ante.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ornament">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+
+<!-- ══ SCREENSHOTS ══ -->
+<section id="screenshots">
+  <div class="section">
+    <div class="s-head reveal">
+      <span class="s-label">From the World</span>
+      <h2 class="s-title">Screenshots</h2>
+      <div class="s-rule"></div>
+    </div>
+    <div class="gallery reveal">
+      <div class="shot">
+        <div class="shot-bg s1"><span class="shot-icon">🌌</span><span class="shot-hint">Add screenshot</span></div>
+        <div class="shot-label-overlay"><span class="shot-caption">Scene Name</span></div>
+      </div>
+      <div class="shot">
+        <div class="shot-bg s2"><span class="shot-icon">🏰</span><span class="shot-hint">Add screenshot</span></div>
+        <div class="shot-label-overlay"><span class="shot-caption">Scene Name</span></div>
+      </div>
+      <div class="shot">
+        <div class="shot-bg s3"><span class="shot-icon">⚔️</span><span class="shot-hint">Add screenshot</span></div>
+        <div class="shot-label-overlay"><span class="shot-caption">Scene Name</span></div>
+      </div>
+      <div class="shot">
+        <div class="shot-bg s4"><span class="shot-icon">🔮</span><span class="shot-hint">Add screenshot</span></div>
+        <div class="shot-label-overlay"><span class="shot-caption">Scene Name</span></div>
+      </div>
+      <div class="shot">
+        <div class="shot-bg s5"><span class="shot-icon">🌿</span><span class="shot-hint">Add screenshot</span></div>
+        <div class="shot-label-overlay"><span class="shot-caption">Scene Name</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ornament">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+
+<!-- ══ TEAM ══ -->
+<section id="team">
+  <div class="section">
+    <div class="s-head reveal">
+      <span class="s-label">The Makers</span>
+      <h2 class="s-title">Meet the Team</h2>
+      <div class="s-rule"></div>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="t-avatar">🧙</div>
+        <div class="t-info">
+          <p class="t-name">Lorem Ipsum</p><p class="t-role">Lorem Role</p>
+          <div class="t-divider"></div>
+          <p class="t-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="t-avatar">🎨</div>
+        <div class="t-info">
+          <p class="t-name">Lorem Ipsum</p><p class="t-role">Lorem Role</p>
+          <div class="t-divider"></div>
+          <p class="t-bio">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="t-avatar">📜</div>
+        <div class="t-info">
+          <p class="t-name">Lorem Ipsum</p><p class="t-role">Lorem Role</p>
+          <div class="t-divider"></div>
+          <p class="t-bio">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="t-avatar">🔧</div>
+        <div class="t-info">
+          <p class="t-name">Lorem Ipsum</p><p class="t-role">Lorem Role</p>
+          <div class="t-divider"></div>
+          <p class="t-bio">Excepteur sint occaecat cupidatat non proident sunt in culpa officia.</p>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="t-avatar">🎵</div>
+        <div class="t-info">
+          <p class="t-name">Lorem Ipsum</p><p class="t-role">Lorem Role</p>
+          <div class="t-divider"></div>
+          <p class="t-bio">Pellentesque habitant morbi tristique senectus et netus malesuada fames.</p>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="t-avatar">🛡️</div>
+        <div class="t-info">
+          <p class="t-name">Lorem Ipsum</p><p class="t-role">Lorem Role</p>
+          <div class="t-divider"></div>
+          <p class="t-bio">Vestibulum ante ipsum primis in faucibus orci luctus ultrices posuere.</p>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="t-avatar">✨</div>
+        <div class="t-info">
+          <p class="t-name">Lorem Ipsum</p><p class="t-role">Lorem Role</p>
+          <div class="t-divider"></div>
+          <p class="t-bio">Curabitur pretium tincidunt lacus nulla mauris accumsan nulla facilisi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ornament">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+
+<!-- ══ DOWNLOAD ══ -->
+<section id="download">
+  <div class="s-head reveal">
+    <span class="s-label">Begin Your Journey</span>
+    <h2 class="s-title">Download Talfborne</h2>
+    <div class="s-rule"></div>
+  </div>
+  <p class="dl-tagline reveal">
+    Lorem ipsum dolor sit amet consectetur.<br/>
+    Adipiscing elit sed do eiusmod tempor incididunt.
+  </p>
+  <div class="dl-badges reveal">
+    <span class="badge">v0.1 Beta</span>
+    <span class="badge">Windows · Mac</span>
+    <span class="badge">Free</span>
+    <span class="badge">Student Project</span>
+  </div>
+  <div class="hero-cta reveal">
+    <a href="#" class="btn btn-gold">⬇ &nbsp; Download Now</a>
+    <a href="#" class="btn btn-ghost">View on GitHub</a>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <p class="f-logo">✦ &nbsp; TALFBORNE &nbsp; ✦</p>
+  <p class="f-copy">A student game project — built with curiosity and a love for the arcane.</p>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 90);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    links.classList.toggle('open');
+    document.body.style.overflow = links.classList.contains('open') ? 'hidden' : '';
+  });
+  function closeMenu() {
+    toggle.classList.remove('open');
+    links.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+</script>
+
+</body>
+</html>

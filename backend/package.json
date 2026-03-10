@@ -1,0 +1,24 @@
+{
+  "name": "talfborne-website",
+  "version": "1.0.0",
+  "description": "Talfborne - A student game project website",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js"
+  },
+  "keywords": [
+    "game",
+    "website",
+    "talfborne"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
