@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The World and Lore of Taflborne">
+  <meta name="theme-color" content="#080608">
+  <title>Lore - TAFLBORNE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'AsrogGenos';
+      src: url('AsrogGenos.woff2') format('woff2');
+      font-display: swap;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .lore-hero {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(180deg, #1a1a2e 0%, #0e0a10 100%);
+    }
+
+    .lore-section {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .lore-section h2 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 2rem;
+      color: var(--gold-light);
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 16px var(--gold);
+      letter-spacing: 0.05em;
+    }
+
+    .lore-section p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #d4b87aaa;
+      margin-bottom: 1rem;
+    }
+
+    .lore-divider {
+      text-align: center;
+      margin: 3rem 0;
+      color: var(--gold);
+      font-size: 1.5rem;
+      opacity: 0.6;
+    }
+
+    .lore-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .lore-card {
+      background: linear-gradient(135deg, #1a1a2e 0%, #0e0a10 100%);
+      border: 1px solid #c08a2a33;
+      padding: 2rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .lore-card:hover {
+      border-color: #c08a2a66;
+      box-shadow: 0 0 20px #c08a2a22;
+      transform: translateY(-4px);
+    }
+
+    .lore-card h3 {
+      font-family: 'Cinzel', serif;
+      color: var(--gold-light);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .lore-card p {
+      font-size: 0.95rem;
+      color: #c4a87a99;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-logo">✦ Taflborne</div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="index.html#features" onclick="closeMenu()">Features</a></li>
+    <li><a href="index.html#screenshots" onclick="closeMenu()">Gallery</a></li>
+    <li><a href="lore.html" onclick="closeMenu()" class="active">Lore</a></li>
+    <li><a href="index.html#download" onclick="closeMenu()">Download</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="lore-hero">
+  <div class="hero-rune"></div>
+  <p class="hero-eyebrow">✦ &nbsp; The World Beyond &nbsp; ✦</p>
+  <h1 class="hero-title">Lore of Taflborne</h1>
+  <div class="hero-rule"></div>
+  <p class="hero-tagline">Discover the legends, conflicts, and magic that shape the world</p>
+</section>
+
+<div class="ornament">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+
+<!-- ══ WORLD HISTORY ══ -->
+<section>
+  <div class="lore-section">
+    <h2>The World of Taflborne</h2>
+    <p>
+      In an ancient realm where magic flows like rivers and legends walk among mortals, Taflborne stands as a proving ground for the mightiest souls. This is a world where heroes are not born—they are forged through trials, combat, and conquest.
+    </p>
+    <p>
+      The realm has witnessed countless ages of war and peace, of rising empires and forgotten kingdoms. Yet in this current era, a great convergence draws heroes from across the shattered lands. Summoned by forces beyond understanding, champions clash not for gold or dominion, but for glory and the chance to become truly legendary.
+    </p>
+  </div>
+</section>
+
+<div class="lore-divider">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+
+<!-- ══ FACTIONS ══ -->
+<section>
+  <div class="lore-section">
+    <h2>The Great Factions</h2>
+    <p>
+      Across Taflborne, mighty factions vie for supremacy. Each brings their own philosophy, magic, and champions to the endless battles.
+    </p>
+    <div class="lore-grid">
+      <div class="lore-card">
+        <h3>⚔️ The Golden Legion</h3>
+        <p>Warriors of honor and might, the Golden Legion upholds the old martial traditions. Their champions are swift, mighty, and unwavering in battle.</p>
+      </div>
+      <div class="lore-card">
+        <h3>🔮 The Arcane Conclave</h3>
+        <p>Masters of mystical forces, the Arcane Conclave weaves reality itself through powerful spells and enchantments. Their power is subtle yet devastating.</p>
+      </div>
+      <div class="lore-card">
+        <h3>🐉 The Feral Tribes</h3>
+        <p>Descended from ancient beasts and primal magic, the Feral Tribes command creatures of legend and fury. Raw, untamed, and utterly fierce.</p>
+      </div>
+      <div class="lore-card">
+        <h3>👁️ The Shadow Order</h3>
+        <p>Mysterious and cunning, the Shadow Order operates in darkness and deception. Their strategies are intricate, their blades are sharp, and their secrets are many.</p>
+      </div>
+      <div class="lore-card">
+        <h3>✨ The Starborn</h3>
+        <p>Touched by celestial forces, the Starborn bring balance between realms. They are rare, powerful, and possess knowledge from beyond the mortal world.</p>
+      </div>
+      <div class="lore-card">
+        <h3>⚡ The Crimson Forge</h3>
+        <p>Crafters of legendary artifacts and artificers of war, the Crimson Forge binds their souls to their creations. Technology and magic intertwined.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lore-divider">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+
+<!-- ══ THE CONVERGENCE ══ -->
+<section>
+  <div class="lore-section">
+    <h2>The Convergence</h2>
+    <p>
+      A mysterious event known as "The Convergence" has drawn warriors, mages, beasts, and legends to the same field of battle. No one knows the true cause—some say it is the will of ancient gods, others claim it is a magical phenomenon beyond comprehension.
+    </p>
+    <p>
+      What is known is that those chosen by the Convergence are summoned endlessly to prove their worth through combat. They fall, they return, and they grow stronger. In this cycle of eternal battle, new legends are born, and the greatest heroes achieve immortality not through time, but through the songs sung by survivors.
+    </p>
+    <p>
+      You are one of the chosen. Will you rise above the endless tide and become a true TAFLBORNE legend?
+    </p>
+  </div>
+</section>
+
+<div class="ornament">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+
+<!-- ══ FOOTER ══ -->
+<footer style="text-align: center; padding: 3rem 2rem; color: #8b7355aa; font-size: 0.9rem; margin-top: 4rem;">
+  <p>© 2024 Taflborne. A Student Game Project.</p>
+  <p><a href="index.html" style="color: var(--gold-light); text-decoration: none;">Return to Home</a></p>
+</footer>
+
+<script>
+  function closeMenu() {
+    const menuButton = document.getElementById('navToggle');
+    menuButton.classList.remove('active');
+    document.getElementById('navLinks').classList.remove('show');
+  }
+
+  document.getElementById('navToggle').addEventListener('click', () => {
+    const menuButton = document.getElementById('navToggle');
+    const menu = document.getElementById('navLinks');
+    menuButton.classList.toggle('active');
+    menu.classList.toggle('show');
+  });
+</script>
+</body>
+</html>
