@@ -345,8 +345,7 @@ nav {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 200px 200px;
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.8rem;
 }
 
@@ -354,13 +353,14 @@ nav {
   position: relative; overflow: hidden;
   border: 1px solid #c08a2a22; cursor: pointer;
   transition: border-color 0.3s;
+  aspect-ratio: 16/9;
 }
 .shot:hover { border-color: #c08a2a88; }
-.shot:nth-child(1) { grid-column: span 7; }
-.shot:nth-child(2) { grid-column: span 5; }
-.shot:nth-child(3) { grid-column: span 4; }
-.shot:nth-child(4) { grid-column: span 5; }
-.shot:nth-child(5) { grid-column: span 3; }
+.shot:nth-child(1) { grid-column: span 2; }
+.shot:nth-child(2) { grid-column: span 1; }
+.shot:nth-child(3) { grid-column: span 1; }
+.shot:nth-child(4) { grid-column: span 1; }
+.shot:nth-child(5) { grid-column: span 1; }
 
 .shot-bg {
   width: 100%; height: 100%;
@@ -640,14 +640,13 @@ footer {
   .nav-links { gap: 2rem; }
   .feat-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 180px 180px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .shot:nth-child(1) { grid-column: span 4; }
-  .shot:nth-child(2) { grid-column: span 2; }
-  .shot:nth-child(3) { grid-column: span 2; }
-  .shot:nth-child(4) { grid-column: span 2; }
-  .shot:nth-child(5) { grid-column: span 2; }
+  .shot:nth-child(1) { grid-column: span 2; }
+  .shot:nth-child(2) { grid-column: span 1; }
+  .shot:nth-child(3) { grid-column: span 1; }
+  .shot:nth-child(4) { grid-column: span 1; }
+  .shot:nth-child(5) { grid-column: span 1; }
   .team-grid { grid-template-columns: 1fr; }
 }
 
@@ -687,8 +686,8 @@ footer {
   .s-title { font-size: 1.4rem; }
   .feat-grid { grid-template-columns: 1fr; }
   .feat-card { padding: 1.4rem; }
-  .gallery { grid-template-columns: 1fr 1fr; grid-template-rows: unset; }
-  .shot { grid-column: span 1 !important; height: 140px; }
+  .gallery { grid-template-columns: 1fr; }
+  .shot { grid-column: span 1 !important; aspect-ratio: 16/9; height: auto; }
   .team-grid { grid-template-columns: 1fr; }
   .team-card { padding: 1.2rem 1.4rem; gap: 1.1rem; }
   .t-avatar { width: 54px; height: 54px; font-size: 1.5rem; }
@@ -719,7 +718,18 @@ footer {
   .t-name { font-size: 0.82rem; }
   .t-bio { font-size: 0.74rem; }
   .gallery { grid-template-columns: 1fr; }
-  .shot { height: 140px !important; }
+  .shot { aspect-ratio: 16/9; height: auto !important; }
   .btn { padding: 0.8rem 1.6rem; letter-spacing: 0.2em; }
   .dl-badges { gap: 0.5rem; }
 }
+
+/* ── Screenshot images ── */
+.shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.shot:hover img { transform: scale(1.03); }
