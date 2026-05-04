@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TALFBORNE — Characters</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'AsrogGenos';
+      src: url('AsrogGenos.woff2') format('woff2');
+      font-display: swap;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="characters.css">
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-logo">✦ Talfborne</div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html"            onclick="closeMenu()">Home</a></li>
+    <li><a href="index.html#features"   onclick="closeMenu()">Features</a></li>
+    <li><a href="index.html#screenshots"onclick="closeMenu()">Gallery</a></li>
+    <li><a href="characters.html"       onclick="closeMenu()" class="active">Characters</a></li>
+    <li><a href="lore.html"       onclick="closeMenu()" class="active">Lore</a></li>
+    <li><a href="index.html#download"   onclick="closeMenu()">Download</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ══ -->
+<header class="char-header">
+  <div class="hero-rune"></div>
+  <p class="hero-eyebrow">✦ &nbsp; The Chosen &nbsp; ✦</p>
+  <h1 class="char-page-title">Characters</h1>
+  <div class="hero-rule" style="margin:1rem auto 0;"></div>
+</header>
+
+<!-- ══ MAIN ══ -->
+<main class="char-main">
+
+  <!-- PORTRAIT GRID -->
+  <div class="portrait-grid" id="portraitGrid">
+
+    <div class="portrait-card" data-id="0">
+      <div class="portrait-img pc-0"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Brindle the Boar</span>
+        <span class="portrait-class">Forest Guardian</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="1">
+      <div class="portrait-img pc-1"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Larry the Skeleton</span>
+        <span class="portrait-class">Undead Sentry</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="2">
+      <div class="portrait-img pc-2"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Pip the Pixie</span>
+        <span class="portrait-class">Fae Wanderer</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="3">
+      <div class="portrait-img pc-3"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Flitter</span>
+        <span class="portrait-class">Bat Swarm</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="4">
+      <div class="portrait-img pc-4"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Hale Ward</span>
+        <span class="portrait-class">Shieldbearer</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="5">
+      <div class="portrait-img pc-5"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Glim the Slime</span>
+        <span class="portrait-class">Memory Entity</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="6">
+      <div class="portrait-img pc-6"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Buttoncap</span>
+        <span class="portrait-class">Mycelial Walker</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="7">
+      <div class="portrait-img pc-7"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Lune Thornwick</span>
+        <span class="portrait-class">Borderlander Archer</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="8">
+      <div class="portrait-img pc-8"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Ren Hollow</span>
+        <span class="portrait-class">Werewolf Guardian</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="9">
+      <div class="portrait-img pc-9"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Mossguard</span>
+        <span class="portrait-class">Sacred Golem</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="10">
+      <div class="portrait-img pc-10"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Asterius</span>
+        <span class="portrait-class">Former Gladiator</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="11">
+      <div class="portrait-img pc-11"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Milo Quickpaw</span>
+        <span class="portrait-class">Inventor</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="12">
+      <div class="portrait-img pc-12"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Sir Rowan Bright</span>
+        <span class="portrait-class">Knight of the Dawn</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="13">
+      <div class="portrait-img pc-13"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Bramble the Great</span>
+        <span class="portrait-class">Gentle Ogre</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="14">
+      <div class="portrait-img pc-14"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Nessa of the Lake</span>
+        <span class="portrait-class">Lake Guardian</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="15">
+      <div class="portrait-img pc-15"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Roselle Thorn</span>
+        <span class="portrait-class">Poison Rose</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="16">
+      <div class="portrait-img pc-16"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Mirella</span>
+        <span class="portrait-class">Forbidden Scholar</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="17">
+      <div class="portrait-img pc-17"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Graveward</span>
+        <span class="portrait-class">Skeleton Knight</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="18">
+      <div class="portrait-img pc-18"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Skyrend</span>
+        <span class="portrait-class">Mountain Wyvern</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="19">
+      <div class="portrait-img pc-19"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Sir Aurelion</span>
+        <span class="portrait-class">Paladin of the Dawn</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="20">
+      <div class="portrait-img pc-20"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Sylwen Lightleaf</span>
+        <span class="portrait-class">Elf Sharpshooter</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="21">
+      <div class="portrait-img pc-21"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Lord Drakar</span>
+        <span class="portrait-class">Ancient Dragon</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="22">
+      <div class="portrait-img pc-22"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Knave</span>
+        <span class="portrait-class">Elder Entity</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+    <div class="portrait-card" data-id="23">
+      <div class="portrait-img pc-23"></div>
+      <div class="portrait-overlay">
+        <span class="portrait-name">Zephyr</span>
+        <span class="portrait-class">Great Gryphon</span>
+      </div>
+      <div class="portrait-border-tl"></div>
+      <div class="portrait-border-br"></div>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- ══ LORE MODAL ══ -->
+<div class="lore-modal" id="loreModal">
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose">✕</button>
+    
+    <div class="lore-container">
+      <!-- art / splash -->
+      <div class="lore-art" id="loreArt"></div>
+
+      <!-- text side -->
+      <div class="lore-text">
+        <div class="lore-tag" id="loreTag">Forest Guardian</div>
+        <h2 class="lore-name" id="loreName">Brindle the Boar</h2>
+        <div class="lore-rule"></div>
+        <p class="lore-quote" id="loreQuote">"The forest remembers where the road used to bend. I remember, too."</p>
+        <p class="lore-bio" id="loreBio">
+          Brindle was not always a guardian. He was born in a thicket now paved over for a Radiant Kingdom outpost. He is not clever. He is not magical. But Brindle remembers everything — every tree felled, every path rerouted, every fence erected where a stream once flowed.
+        </p>
+        <div class="lore-stats" id="loreStats">
+          <div class="lore-stat">
+            <span class="stat-label">Origin</span>
+            <span class="stat-val" id="statOrigin">The Shifting Woods</span>
+          </div>
+          <div class="lore-stat">
+            <span class="stat-label">Affiliation</span>
+            <span class="stat-val" id="statRole">Verdant Wilds (Outer Guard)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="f-divider">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+  <p class="f-logo">✦ &nbsp; TAFLBORNE &nbsp; ✦</p>
+  <p class="f-copy">A student game project — built with curiosity and a love for the arcane.</p>
+  <div class="f-links">
+    <a href="https://www.instagram.com/gr8_creatives/" aria-label="Instagram">Instagram</a>
+    <span class="f-separator">•</span>
+    <a href="https://twitter.com/gr8_creatives" aria-label="Twitter">Twitter</a>
+    <span class="f-separator">•</span>
+    <a href="#" aria-label="Contact">Contact</a>
+  </div>
+  <p class="f-credit">© 2026 Taflborne. All rights reserved.</p>
+</footer>
+
+<script>
+  const characters = [
+    {
+      name: "Brindle the Boar",
+      class: "Forest Guardian",
+      quote: '"The forest remembers where the road used to bend. I remember, too. (oink oink)"',
+      bio: "Brindle was not always a guardian. He was born in a thicket now paved over for a Radiant Kingdom outpost. His mother died defending their den from surveyors who didn't even know she was there. He is not clever. He is not magical. But Brindle remembers everything — every tree felled, every path rerouted, every fence erected where a stream once flowed. He blocks roads because roads didn't exist when he was young. The villagers curse him. The knights call him a nuisance. But Brindle is not angry — he is grieving. And grief, in a creature who cannot forget, becomes a kind of madness.",
+      origin: "The Shifting Woods",
+      affiliation: "Verdant Wilds (Outer Guard)",
+      difficulty: 2,
+      hue: "100"
+    },
+    {
+      name: "Larry the Skeleton",
+      class: "Undead Sentry",
+      quote: '"Oh! Hello there. Bit lost, are we? ...Ah. Right. I\'m supposed to be the dangerous one. One moment."',
+      bio: "Larry died of food poisoning. Not heroically. Not in battle. He ate bad rations on a Tuesday and simply stopped. When the Hollow Beyond's magic seeped into the soil two decades later, Larry rose — retaining his memory, his manners, and his deep-seated desire to be helpful. He returned to the Crackened Watch, found it abandoned, and resumed his duties. He sweeps (ineffectively). He keeps watch (he has no eyes). He greets travelers (they usually scream). Larry has accepted this. He fights when he must — clumsily, pathetically, but with the stubbornness of a man who once guarded a tower that didn't matter and refuses to stop.",
+      origin: "The Crackened Watch",
+      affiliation: "Unaffiliated (Former Garrison)",
+      difficulty: 1,
+      hue: "200"
+    },
+    {
+      name: "Pip the Pixie",
+      class: "Fae Wanderer",
+      quote: '"I know where the road goes that doesn\'t exist yet. Trade you for that shiny button."',
+      bio: "Pip was hatched in a patch of moonlight mushrooms during a thunderstorm — and fae born during storms are unstable. Too much energy, too little attention span, and a compulsive need to collect things that glitter. Pip flits between the Radiant Kingdom's towns, the Wilds' clearings, and even the edges of the Hollow Beyond, trading secrets for trinkets. The secret Pip guards most jealously: the Hidden Passages — ancient fae roads that exist between moments. These paths can take you anywhere in Luminara in half the time... but only if you know the way. Pip knows. Pip will never tell for free.",
+      origin: "The Rusty Lantern Tavern",
+      affiliation: "The Hidden Paths (Unofficial)",
+      difficulty: 3,
+      hue: "55"
+    },
+    {
+      name: "Flitter",
+      class: "Hive Consciousness",
+      quote: '"(A thousand whispers become one voice)"',
+      bio: "Flitter is not one creature. Flitter is many — a colony of echo bats whose consciousness has merged over generations into something like a single mind. Individual bats come and go, but the self called Flitter continues. The swarm watches. That is its purpose, its drive, its addiction. Flitter sees everything that happens in the Dusk Canopy and much beyond. It knows when armies march, when lovers meet in secret, when creatures die alone. It cannot always understand what it sees, but it remembers. Flitter appears where something is about to go wrong. Not to warn. Not to help. Simply because wrongness has a sound, and Flitter hears it from miles away.",
+      origin: "The Dusk Canopy",
+      affiliation: "Unaffiliated (Observers)",
+      difficulty: 4,
+      hue: "240"
+    },
+    {
+      name: "Hale Ward",
+      class: "Shieldbearer",
+      quote: '"I took an oath to protect. They didn\'t say who. They didn\'t say from what."',
+      bio: "Hale Ward enlisted at seventeen. For fifteen years he was the perfect soldier — loyal, steady, uncomplaining. Then came the Thornfield Expansion. The Kingdom decided a new road was needed, straight through the Shifting Woods. Hale watched them mark trees older than the Kingdom itself. He watched Brindle charge, not in fury but in fear. He watched a family of fae abandon their home. And he did nothing. Now Hale lies awake at night. He hasn't defected. But he has started asking questions, quietly, to himself. He is a good man in a bad system, and he is starting to notice the cracks.",
+      origin: "Thornfield Outpost",
+      affiliation: "Radiant Kingdom (Outer Guard)",
+      difficulty: 2,
+      hue: "30"
+    },
+    {
+      name: "Glim the Slime",
+      class: "Memory Entity",
+      quote: '"(Absorb. Remember. Become.)"',
+      bio: "Glim was not born. Glim coalesced — dripping from the runoff of Luminara's ancient magic, pooling in a forgotten grotto where leylines cross. It is not intelligent the way humans are intelligent. Glim is hunger and memory bound in translucent jelly. It absorbs anything organic, anything magical, anything with residue — and in consuming, remembers. Touch Glim with your bare hand, and you will lose a moment of your past. Scholars believe Glim contains fragments of Luminara's lost history. Glim does not attack. It does not defend. It simply exists, a soft pulsing question mark in the dark.",
+      origin: "The Sunken Grotto",
+      affiliation: "None (Pre-verbal)",
+      difficulty: 5,
+      hue: "160"
+    },
+    {
+      name: "Buttoncap",
+      class: "Mycelial Walker",
+      quote: '"The mycelium dreams. I just... walk."',
+      bio: "Most mushrooms do not walk. Buttoncap does. The mycelium beneath the Shifting Woods is vast — miles of fungal network connecting trees, feeding dead things, and dreaming in chemical pulses. Every few decades, a portion concentrates into a walking form with a single purpose. Buttoncap's purpose is balance. Where the forest is wounded, Buttoncap goes, spreading spores that heal and roots that stabilize. It cannot be reasoned with because it does not understand reason. The tragedy: the mycelium is vast, but the walking form is separate — cut off from the collective, walking alone, healing a forest that will never love it back.",
+      origin: "The Shifting Woods",
+      affiliation: "The Deep Root (Fungal Collective)",
+      difficulty: 2,
+      hue: "120"
+    },
+    {
+      name: "Lune Thornwick",
+      class: "Borderlander Archer",
+      quote: '"I belong to the edge. The space between. The place where \'human\' ends and \'forest\' begins."',
+      bio: "Lune Thornwick's mother was human. Her father was something else — a dryad, maybe, or a forest spirit. The result: a woman who can walk through brambles without bleeding, track a deer for three days without sleeping. The Wilds raised Lune, sort of. But she was never one of them — too human. The Kingdom fears her as a spy. The Wilds distrust her as a reminder of what they're losing. So Lune walks the edge. Her bow was a gift from a dying fae. Her arrows are tipped with thorns that grow only on her mother's grave. She has not chosen a side — because choosing means losing the other, and she has already lost too much.",
+      origin: "The Gray March",
+      affiliation: "None (Formerly Verdant Wilds)",
+      difficulty: 3,
+      hue: "170"
+    },
+    {
+      name: "Ren Hollow",
+      class: "Werewolf Guardian",
+      quote: '"The curse and the gift are the same thing. You just learn to hold them differently."',
+      bio: "Ren Hollow was not born a monster. He was born a hunter — skilled, patient, respected. He lived alone in the woods, trading furs for supplies. Then a wolf bit him. Not a normal wolf. A wolf with eyes like molten silver. Once a month, when the moon is full, Ren becomes something else. The transformation is agony. But here is what the villagers don't know: Ren protects them. On full moons, the real monsters creep toward human settlements. And Ren meets them. Every time. The villagers leave offerings of meat at the edge of town for the wolf that watches. They don't know they're feeding their guardian.",
+      origin: "The Hollow Hills",
+      affiliation: "Unaffiliated (Village Protector)",
+      difficulty: 3,
+      hue: "20"
+    },
+    {
+      name: "Mossguard",
+      class: "Sacred Golem",
+      quote: '"(Silence. Patience. Earth.)"',
+      bio: "Mossguard was built by someone. Someone with power, with purpose, with a reason to protect a small patch of forest for centuries. That someone is dead. Their name is forgotten. Their purpose has eroded like their tombstone. But Mossguard remains. The golem is a thing of stone and root and ancient magic, standing twelve feet tall when it chooses to stand fully. It does not speak. It simply acts — stepping between a poacher and a sacred tree, blocking a road that would cut through old growth, appearing where the land is wounded. The question that haunts scholars: does it remember its purpose, or has instinct replaced memory?",
+      origin: "The Verdant Heart",
+      affiliation: "The Land Itself (No faction)",
+      difficulty: 5,
+      hue: "80"
+    },
+    {
+      name: "Asterius",
+      class: "Former Gladiator",
+      quote: '"They called me \'the Beast\' in the arenas. They were wrong. The beasts were outside the walls."',
+      bio: "Asterius was born in chains. He doesn't remember his parents, his homeland, or the language he might have spoken as a calf. He remembers the arena — the sand, the crowd, the moment they opened the gate and pushed him into the light. For fifteen years, Asterius fought. He killed. He survived. He became a champion. He escaped during a riot — not planned, just opportunity. Now he lives in the Broken Chains tavern, a place for exiles and deserters. He helps with heavy lifting. He tells stories to children. He fights now for dignity — his own, and anyone else's. He will never be chained again.",
+      origin: "The Broken Chains Tavern",
+      affiliation: "Unaffiliated (Former Gladiator)",
+      difficulty: 4,
+      hue: "10"
+    },
+    {
+      name: "Milo Quickpaw",
+      class: "Inventor",
+      quote: '"Every problem has a solution. Some solutions just take... longer to invent."',
+      bio: "Milo Quickpaw was born curious. As a kitten, he took apart his mother's cooking stove. As a juvenile, he rebuilt it into a device that burned twice as hot and exploded three times as often. His tribe exiled him after the fourth explosion. So Milo wanders. His cart — The Workshop — travels between settlements, held together by hope and spare gears. He believes, genuinely and deeply, that violence is a failure of imagination. He has designed crossbows that fire ropes, traps that capture instead of kill. Some of his inventions work. Some explode. He takes both outcomes philosophically.",
+      origin: "The Workshop (Mobile Cart)",
+      affiliation: "None (Independent Inventor)",
+      difficulty: 2,
+      hue: "45"
+    },
+    {
+      name: "Sir Rowan Bright",
+      class: "Knight of the Dawn",
+      quote: '"Honor is not a shield. It\'s a promise you make to yourself every morning."',
+      bio: "Rowan Bright is what the Radiant Kingdom calls a perfect knight. Brave, skilled with a lance, and utterly sincere in his belief that the Kingdom represents goodness and order. He has never questioned an order. He has never doubted a superior. He has never considered that the flag he follows might be stained. But Hale Ward's quiet questions have started to echo. A conversation with a captured fae who said 'we were here first' has lingered. Rowan is not turning traitor. He is not even doubting. He is noticing — and noticing, for someone so uncomplicated, is the first step toward something he cannot name.",
+      origin: "Thornfield Outpost",
+      affiliation: "Radiant Kingdom (Royal Cavalry)",
+      difficulty: 2,
+      hue: "50"
+    },
+    {
+      name: "Bramble the Great",
+      class: "Gentle Ogre",
+      quote: '"Big. Quiet. Alone. That\'s my whole story."',
+      bio: "Bramble is large even by ogre standards — twelve feet of muscle, scarred hide, and a face that looks angry even when he's smiling. He is also the gentlest creature in Luminara. He has never started a fight. He grows vegetables (badly). He keeps bees (surprisingly well). He talks to birds (they don't talk back). The problem: no one believes an ogre can be content. The Kingdom sees a weapon. The Wilds see a potential ally. Everyone wants Bramble. Bramble wants to be left alone. He knows the war will find him eventually. He is preparing — not by training, but by enjoying the peace while it lasts.",
+      origin: "The Lonely Hill",
+      affiliation: "None",
+      difficulty: 3,
+      hue: "35"
+    },
+    {
+      name: "Nessa of the Lake",
+      class: "Lake Guardian",
+      quote: '"I was here before your kingdoms. I will be here after. Watch your step."',
+      bio: "Nessa does not remember her birth. She does not remember a time before the lake. She is the lake — its depths, its secrets, its silent witness to centuries of history observed without participating. She is enormous. Her full form rarely emerges — a long neck, a heavy body, a tail that could capsize boats. She surfaces when the lake is threatened. She communicates through vibrations in the water, through patterns of waves. She has watched the Radiant Kingdom rise. She has intervened exactly four times in four hundred years. Each intervention changed the course of history. She is waiting. Deciding if the current conflict is worth her fifth.",
+      origin: "Lake Veridian",
+      affiliation: "The Deep (Independent)",
+      difficulty: 5,
+      hue: "195"
+    },
+    {
+      name: "Roselle Thorn",
+      class: "Poison Rose",
+      quote: '"Pretty, isn\'t it? The way blood looks on petals. Almost... artistic."',
+      bio: "Roselle Thorn began as a normal rose bush — beautiful, thorny, content to photosynthesize. Then the expansion happened. The Radiant Kingdom cut down her grove to build a road. Her sisters were burned or trampled. Something in Roselle woke up. Raged. She is not a gentle nature spirit. She is vengeance — nature's fury given form, thorns and poison and the memory of fire. She is not evil. She is hurt — and hurt, when combined with power, becomes something dangerous. Some whisper that Roselle could be brought back from the edge. Others whisper that she's already gone.",
+      origin: "The Thorn Grove",
+      affiliation: "None (Radical Environmentalist)",
+      difficulty: 4,
+      hue: "340"
+    },
+    {
+      name: "Mirella",
+      class: "Forbidden Scholar",
+      quote: '"Knowledge is not dangerous. Ignorance is dangerous. I am simply... well-armed."',
+      bio: "Mirella was once a scholar at the Radiant Kingdom's Arcane Academy. Brilliant, ambitious, and deeply curious about what the Academy called proscribed magic. They expelled her when she asked too many questions. They erased her research. She built her own tower on the edge of the Hollow Beyond and studied what the Academy feared. She learned to speak to the dead, to draw power from decay. The Radiant Kingdom wants her captured or killed. The Hollow Beyond wants her allegiance. Mirella wants neither. She wants knowledge — the truth about the last war, the secret at the heart of the Beyond. She is getting closer. That scares everyone, including herself.",
+      origin: "The Spiral Tower",
+      affiliation: "None (Scholar of Forbidden Magic)",
+      difficulty: 4,
+      hue: "270"
+    },
+    {
+      name: "Graveward",
+      class: "Skeleton Knight",
+      quote: '"We did not choose this. But we choose what we become after."',
+      bio: "Graveward remembers dying. He remembers the battle — the last great war, the one that created the Hollow Beyond. He remembers falling, sword in hand, watching his kingdom burn. He does not remember his name. He remembers honor. When the Beyond's magic reanimated him, Graveward expected to become a mindless thing. Instead, he woke up — still himself, still capable of thought and choice. He built the Silent Citadel, a fortress where the honored dead could exist without harming the living. He did not choose undeath, but he chooses what to do with it. Every day. That has to count for something.",
+      origin: "The Silent Citadel",
+      affiliation: "The Hollow Beyond (Honored Dead faction)",
+      difficulty: 4,
+      hue: "220"
+    },
+    {
+      name: "Skyrend",
+      class: "Mountain Wyvern",
+      quote: '"The sky is not yours. You simply borrow it until I arrive."',
+      bio: "Skyrend has no philosophy, no politics, no side in the coming war. Skyrend is hunger with wings — an apex predator who views humans, beasts, fae, and undead as interchangeable food sources. She does not hate. She does not love. She eats. But Skyrend is not mindless. She is intelligent and aware that the war could disrupt her hunting grounds. She has watched armies march through valleys she considers her pantry. The Radiant Kingdom has tried to kill her three times. They have failed each time. Skyrend exists above the conflict. But above is not outside. And Skyrend's shadow falls on everyone.",
+      origin: "The Cinder Peaks",
+      affiliation: "None (Apex Predator)",
+      difficulty: 5,
+      hue: "15"
+    },
+    {
+      name: "Sir Aurelion Nobleheart",
+      class: "Paladin of the Dawn",
+      quote: '"Justice is a sword. But a sword needs a hand, and a hand needs a heart, and a heart can be... wrong."',
+      bio: "Sir Aurelion Nobleheart is the most powerful knight in the Radiant Kingdom. He has fought in thirty-seven border skirmishes, defeated three Hollow Beyond incursions, and personally saved the King's life twice. He is a hero. He is a legend. He is tired. He has started to see the cracks — the villages displaced for roads, the treaties broken for resources, the way 'peace' means 'submission.' He will not betray the Kingdom. He cannot. But he has stopped sleeping well. He has started praying to gods he isn't sure exist. The Paladin is cracking. And when a legend cracks, the pieces can cut anyone.",
+      origin: "The Radiant Capital",
+      affiliation: "Radiant Kingdom (Paladin of the Dawn)",
+      difficulty: 5,
+      hue: "45"
+    },
+    {
+      name: "Sylwen Lightleaf",
+      class: "Elf Sharpshooter",
+      quote: '"I do not want war. But I have watched my home shrink for fifty years. I will not watch it disappear."',
+      bio: "Sylwen Lightleaf has seen three human generations grow and die. She has watched the Radiant Kingdom expand from a distant rumor to a border at her doorstep. She has negotiated treaties, watched them break, buried friends killed by accidental expansion. She is not angry. Anger is for the young. Sylwen is resolved — cold, precise, unshakeable. The tragedy: Sylwen knows war is coming. She has known for decades. She has tried to prevent it through diplomacy, through careful displays of force. Nothing has worked. She keeps calculating, keeps preparing, keeps hoping she is wrong. She is not wrong. And that knowledge lives in her chest like a cold stone.",
+      origin: "The Deepwood",
+      affiliation: "Verdant Wilds (Inner Circle)",
+      difficulty: 4,
+      hue: "140"
+    },
+    {
+      name: "Lord Drakar",
+      class: "Ancient Dragon",
+      quote: '"I have watched empires rise and fall. I have watched you — all of you — make the same mistakes. Again. And again. And again."',
+      bio: "Lord Drakar is old. Not old like your grandmother. Old like mountains, like rivers, like the magic that flows through Luminara's leylines. He remembers the last great war — the one that created the Hollow Beyond, the one that killed creatures like him by the dozen. He survived. He watched. He waited. Drakar does not intervene in mortal conflicts. He has seen too many just wars become genocides. He is neutral because he cares too much — and intervention, once started, cannot be stopped. He is deciding. Watching. Weighing. And when Drakar decides, Luminara will change.",
+      origin: "The Dragon's Throne",
+      affiliation: "None (Above faction)",
+      difficulty: 5,
+      hue: "25"
+    },
+    {
+      name: "Knave",
+      class: "Elder Entity",
+      quote: '"Every story needs a scarecrow. Someone to watch the fields while the farmers sleep."',
+      bio: "Knave appears when things are about to go wrong. Not before — never before, because before is prevention and Knave is not a preventer. Not after — because after is consequence and Knave is not a consequence. Knave is the moment, the breath between peace and disaster, the instant when a choice tips from one outcome to another. It looks like a scarecrow — straw, ragged clothes, a stitched smile that never changes. It does not move when observed. It is always somewhere else when you look away. It leaves black feathers floating where it stood. When Knave appears, something is about to change. And that change will not be small.",
+      origin: "Anywhere chaos is about to unfold",
+      affiliation: "Chaos (Neutral)",
+      difficulty: 5,
+      hue: "0"
+    },
+    {
+      name: "Zephyr",
+      class: "Great Gryphon",
+      quote: '"Balance is not peace. Balance is the tension between two forces, neither allowed to win. I am that tension."',
+      bio: "Zephyr is the reason the war has not started yet. Not consciously — the gryphon does not negotiate treaties. Zephyr is presence, the living symbol of balance, the creature that appears when one side grows too strong and reminds them — gently, firmly, with claws like swords — that overreach has consequences. The Radiant Kingdom has seen Zephyr circling their capital when expansion debates grow heated. The Verdant Wilds have felt the gryphon's shadow when their raiding parties grow too bold. Zephyr does not speak. It communicates through pressure — the weight of its gaze, the timing of its appearances, the way the wind changes when it flies overhead.",
+      origin: "The Sky's Edge",
+      affiliation: "Balance (True Neutral)",
+      difficulty: 5,
+      hue: "180"
+    },
+  ];
+
+  const cards = document.querySelectorAll('.portrait-card');
+  const panel = document.getElementById('lorePanel');
+  const content = document.getElementById('loreContent');
+  const idle = document.querySelector('.lore-idle');
+  let active = null;
+
+  function setPips(count) {
+    const container = document.getElementById('statDiff');
+    container.innerHTML = '';
+    for (let i = 1; i <= 5; i++) {
+      const pip = document.createElement('span');
+      pip.className = 'pip' + (i <= count ? ' active' : '');
+      container.appendChild(pip);
+    }
+  }
+
+  function selectChar(id) {
+    const c = characters[id];
+
+    // update active state
+    cards.forEach(card => card.classList.remove('active'));
+    cards[id].classList.add('active');
+    active = id;
+
+    // update lore art bg
+    document.getElementById('loreArt').style.background =
+      `radial-gradient(ellipse at 40% 50%, hsl(${c.hue},40%,18%) 0%, #080608 70%)`;
+    document.getElementById('loreArt').setAttribute('data-hue', c.hue);
+
+    // update text
+    document.getElementById('loreTag').textContent = c.class;
+    document.getElementById('loreName').textContent = c.name;
+    document.getElementById('loreQuote').textContent = c.quote;
+    document.getElementById('loreBio').textContent = c.bio;
+    document.getElementById('statOrigin').textContent = c.origin;
+    document.getElementById('statRole').textContent = c.affiliation;
+
+    // show modal
+    document.getElementById('loreModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('loreModal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => selectChar(+card.dataset.id));
+  });
+
+  // modal controls
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('modalOverlay').addEventListener('click', closeModal);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.getElementById('loreModal').classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // nav toggle
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    links.classList.toggle('open');
+    document.body.style.overflow = links.classList.contains('open') ? 'hidden' : '';
+  });
+  function closeMenu() {
+    toggle.classList.remove('open');
+    links.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // auto-select first on load
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => selectChar(0), 400);
+  });
+</script>
+
+</body>
+</html>

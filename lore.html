@@ -33,6 +33,10 @@
       padding: 0 2rem;
     }
 
+    section:has(.lore-section):last-of-type .lore-section {
+      margin-bottom: 0;
+    }
+
     .lore-section h2 {
       font-family: 'Cinzel Decorative', serif;
       font-size: 2rem;
@@ -57,37 +61,148 @@
       opacity: 0.6;
     }
 
-    .lore-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+
+    .cta-text {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #d4b87aaa;
+      margin-bottom: 2rem;
+      text-align: center;
     }
 
-    .lore-card {
-      background: linear-gradient(135deg, #1a1a2e 0%, #0e0a10 100%);
-      border: 1px solid #c08a2a33;
-      padding: 2rem;
-      border-radius: 4px;
-      transition: all 0.3s ease;
+    #characters-cta {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      text-align: center;
     }
 
-    .lore-card:hover {
-      border-color: #c08a2a66;
-      box-shadow: 0 0 20px #c08a2a22;
-      transform: translateY(-4px);
+    #characters-cta .section {
+      margin: 0;
+      padding: 0;
     }
 
-    .lore-card h3 {
-      font-family: 'Cinzel', serif;
-      color: var(--gold-light);
-      margin-bottom: 1rem;
+    #characters-cta .s-head {
+      margin: 0 0 1.5rem 0;
+    }
+
+    #characters-cta .btn-gold {
       font-size: 1.3rem;
+      padding: 1.2rem 3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
     }
 
-    .lore-card p {
-      font-size: 0.95rem;
-      color: #c4a87a99;
+    @media (max-width: 768px) {
+      .lore-hero {
+        min-height: 45vh;
+        padding: 4rem 1.5rem 2.5rem;
+      }
+
+      .lore-hero h1 {
+        font-size: clamp(1.8rem, 6vw, 3rem);
+      }
+
+      .lore-section {
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+      }
+
+      .lore-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      .lore-section p {
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .lore-divider {
+        margin: 2rem 0;
+        font-size: 1.2rem;
+      }
+
+      #characters-cta .s-title {
+        font-size: 1.5rem;
+      }
+
+      #characters-cta .btn-gold {
+        font-size: 1rem;
+        padding: 0.9rem 2rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .lore-hero {
+        min-height: 40vh;
+        padding: 3rem 1rem 2rem;
+      }
+
+      .lore-hero .hero-eyebrow {
+        font-size: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .lore-hero h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+      }
+
+      .lore-hero .hero-tagline {
+        font-size: 0.85rem;
+        letter-spacing: 0.2em;
+      }
+
+      .lore-section {
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      .lore-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .lore-section p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 0.7rem;
+      }
+
+      .lore-divider {
+        margin: 1.5rem 0;
+        font-size: 1rem;
+      }
+
+      #characters-cta .section {
+        padding: 2rem 1rem;
+      }
+
+      #characters-cta .s-label {
+        font-size: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      #characters-cta .s-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+      }
+
+      #characters-cta .s-rule {
+        width: 40px;
+        margin: 0.8rem auto 1rem;
+      }
+
+      #characters-cta .cta-text {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+      }
+
+      #characters-cta .btn-gold {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.6rem;
+        letter-spacing: 0.1em;
+      }
     }
   </style>
 </head>
@@ -103,6 +218,7 @@
     <li><a href="index.html" onclick="closeMenu()">Home</a></li>
     <li><a href="index.html#features" onclick="closeMenu()">Features</a></li>
     <li><a href="index.html#screenshots" onclick="closeMenu()">Gallery</a></li>
+    <li><a href="characters.html" onclick="closeMenu()">Characters</a></li>
     <li><a href="lore.html" onclick="closeMenu()" class="active">Lore</a></li>
     <li><a href="index.html#download" onclick="closeMenu()">Download</a></li>
   </ul>
@@ -124,71 +240,56 @@
   <div class="lore-section">
     <h2>The World of Taflborne</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+In the Vale of Luminara, no story stands alone. Every creature, every knight, every forgotten thing is a thread in a vast tapestry, pull one, and others tremble. What follows are not isolated biographies but interconnected chronicles, where each entry reveals bonds, rivalries, debts, and destinies shared across factions and forms.
     </p>
     <p>
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-    </p>
+The war has not yet begun in earnest, but the threads are tightening.    </p>
   </div>
 </section>
 
 <div class="lore-divider">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
 
-<!-- ══ FACTIONS ══ -->
-<section>
-  <div class="lore-section">
-    <h2>The Great PLACEHOLDER(Factions)</h2>
-    <p>
-      Across Taflborne, mighty factions vie for supremacy. Each brings their own philosophy, magic, and champions to the endless battles.
-    </p>
-    <div class="lore-grid">
-      <div class="lore-card">
-        <h3>⚔️ PLACEHOLDER</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
-      </div>
-      <div class="lore-card">
-        <h3>🔮 PLACEHOLDER</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa.</p>
-      </div>
-      <div class="lore-card">
-        <h3>🐉 PLACEHOLDER</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-      </div>
-      <div class="lore-card">
-        <h3>👁️ PLACEHOLDER</h3>
-        <p>Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
-      </div>
-      <div class="lore-card">
-        <h3>✨ PLACEHOLDER</h3>
-        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
-      </div>
-      <div class="lore-card">
-        <h3>⚡ PLACEHOLDER</h3>
-        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut quid ex ea commodo consequatur quisquam exercitationem nostrum.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="lore-divider">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
 
 <!-- ══ THE CONVERGENCE ══ -->
 <section>
   <div class="lore-section">
-    <h2>The Placeholder</h2>
+    <h2>THE THREADS TIGHTEN</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.
+Every character in Luminara carries connections—visible and invisible, acknowledged and denied. The boar knows the mushroom. The skeleton knows the knight. The witch studies the slime. The dragon watches everyone.
     </p>
     <p>
-      Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+The war has not begun. But the threads are tightening.    </p>
+    <p>
+When the first blow finally falls—whether struck by Kingdom, Wilds, or Beyond—the tapestry will tear. And everyone, from the lowest slime to the highest dragon, will have to choose.
     </p>
     <p>
-      Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit.
+       Not good vs evil.
+    </p>
+    <p>
+      Not right vs wrong. 
+    </p>
+    <p>
+      Not good vs evil.
+    </p>
+    <p>
+      But what kind of world they want Luminara to become.
     </p>
   </div>
 </section>
 
-<div class="ornament">✦ &thinsp; ─ &thinsp; ✦ &thinsp; ─ &thinsp; ✦</div>
+<section id="characters-cta">
+  <div class="section">
+    <div class="s-head reveal">
+      <span class="s-label">Meet Them</span>
+      <h2 class="s-title">The Characters of Taflborne</h2>
+      <div class="s-rule"></div>
+    </div>
+    <p class="cta-text reveal">Discover the heroes, creatures, and forces that shape the world of Taflborne. Each character carries their own story, ambitions, and mysteries.</p>
+    <div class="hero-cta reveal">
+      <a href="characters.html" class="btn btn-gold">View All Characters</a>
+    </div>
+  </div>
+</section>
 
 <!-- ══ FOOTER ══ -->
 <footer>
@@ -206,18 +307,18 @@
 </footer>
 
 <script>
-  function closeMenu() {
-    const menuButton = document.getElementById('navToggle');
-    menuButton.classList.remove('active');
-    document.getElementById('navLinks').classList.remove('show');
-  }
-
-  document.getElementById('navToggle').addEventListener('click', () => {
-    const menuButton = document.getElementById('navToggle');
-    const menu = document.getElementById('navLinks');
-    menuButton.classList.toggle('active');
-    menu.classList.toggle('show');
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    links.classList.toggle('open');
+    document.body.style.overflow = links.classList.contains('open') ? 'hidden' : '';
   });
+  function closeMenu() {
+    toggle.classList.remove('open');
+    links.classList.remove('open');
+    document.body.style.overflow = '';
+  }
 </script>
 </body>
 </html>
