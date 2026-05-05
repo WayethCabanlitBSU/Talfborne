@@ -63,96 +63,63 @@
 .portrait-card:hover .portrait-img,
 .portrait-card.active .portrait-img { transform: scale(1.05); }
 
-/* unique gradient per character */
-/* 0: Brindle — earthy forest green */
-.pc-0 { background: radial-gradient(ellipse at 50% 30%, #1a3a0a 0%, #0a1a04 60%, #080608 100%); }
-/* 1: Larry — cold bone-white blue */
-.pc-1 { background: radial-gradient(ellipse at 50% 30%, #0a1a3a 0%, #040a18 60%, #080608 100%); }
-/* 2: Pip — warm fae gold */
-.pc-2 { background: radial-gradient(ellipse at 50% 30%, #3a2a04 0%, #1a1202 60%, #080608 100%); }
-/* 3: Flitter — deep twilight purple */
-.pc-3 { background: radial-gradient(ellipse at 50% 30%, #1a0a3a 0%, #0c0420 60%, #080608 100%); }
-/* 4: Hale Ward — military amber */
-.pc-4 { background: radial-gradient(ellipse at 50% 30%, #3a1e04 0%, #1a0e02 60%, #080608 100%); }
-/* 5: Glim — eerie teal-green */
-.pc-5 { background: radial-gradient(ellipse at 50% 30%, #043a2a 0%, #021a14 60%, #080608 100%); }
-/* 6: Buttoncap — muted sage green */
-.pc-6 { background: radial-gradient(ellipse at 50% 30%, #143a10 0%, #081a06 60%, #080608 100%); }
-/* 7: Lune — cool teal-grey border */
-.pc-7 { background: radial-gradient(ellipse at 50% 30%, #083a32 0%, #041a16 60%, #080608 100%); }
+/* unique background images with fallback gradients */
+/* 0: Brindle */
+.pc-0 { background: url('images/Brindle.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #1a3a0a 0%, #0a1a04 60%, #080608 100%); }
+/* 1: Larry */
+.pc-1 { background: url('images/Larry.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #0a1a3a 0%, #040a18 60%, #080608 100%); }
+/* 2: Pip */
+.pc-2 { background: url('images/Pip.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #3a2a04 0%, #1a1202 60%, #080608 100%); }
+/* 3: Flitter */
+.pc-3 { background: url('images/Flitter.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #1a0a3a 0%, #0c0420 60%, #080608 100%); }
+/* 4: Hale Ward */
+.pc-4 { background: url('images/Hale.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #3a1e04 0%, #1a0e02 60%, #080608 100%); }
+/* 5: Glim */
+.pc-5 { background: url('images/Glim.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #043a2a 0%, #021a14 60%, #080608 100%); }
+/* 6: Buttoncap */
+.pc-6 { background: url('images/Buttoncap.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #143a10 0%, #081a06 60%, #080608 100%); }
+/* 7: Lune */
+.pc-7 { background: url('images/Luna.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #083a32 0%, #041a16 60%, #080608 100%); }
+/* 8: Ren Hollow */
+.pc-8 { background: url('images/Ren.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #1e1a0a 0%, #0e0e06 60%, #080608 100%); }
+/* 9: Mossguard */
+.pc-9 { background: url('images/Mossguard.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #0a2010 0%, #040e06 60%, #080608 100%); }
+/* 10: Asterius */
+.pc-10 { background: url('images/Asterius.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #3a0e04 0%, #1a0602 60%, #080608 100%); }
+/* 11: Milo Quickpaw */
+.pc-11 { background: url('images/Milo.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #2a1e04 0%, #140e02 60%, #080608 100%); }
+/* 12: Sir Rowan Bright */
+.pc-12 { background: url('images/Sir%20Rowand.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #2a1e06 0%, #14100a 60%, #080608 100%); }
+/* 13: Bramble */
+.pc-13 { background: url('images/Bramble.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #2a1606 0%, #140a02 60%, #080608 100%); }
+/* 14: Nessa */
+.pc-14 { background: url('images/Nessa.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #042832 0%, #021418 60%, #080608 100%); }
+/* 15: Roselle Thorn */
+.pc-15 { background: url('images/Roselle%20Thorn.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #3a0414 0%, #1a0208 60%, #080608 100%); }
 
-/* placeholder silhouette */
+/* 17: Graveward */
+.pc-17 { background: url('images/Graveward.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #0a1830 0%, #040a18 60%, #080608 100%); }
+/* 18: Skyrend */
+.pc-18 { background: url('images/Skyrend.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #3a1204 0%, #1a0802 60%, #080608 100%); }
+/* 19: Sir Aurelion */
+.pc-19 { background: url('images/Sir%20Aurelion.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #2e1e04 0%, #160e02 60%, #080608 100%); }
+/* 20: Sylwen */
+.pc-20 { background: url('images/Sylwen.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #0e2e0a 0%, #061606 60%, #080608 100%); }
+/* 21: Lord Drakar */
+.pc-21 { background: url('images/Lord%20Drakar.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #2e1004 0%, #160802 60%, #080608 100%); }
+/* 22: Knave */
+.pc-22 { background: url('images/Knave.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #1a0808 0%, #0c0404 60%, #080608 100%); }
+/* 23: Zephyr */
+.pc-23 { background: url('images/Zephyr.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #042e30 0%, #021618 60%, #080608 100%); }
+
+/* placeholder silhouette (show if portrait fails to load) */
 .portrait-img::after {
-  content: '🐗';
+  content: '';
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
-  font-size: 3rem; opacity: 0.12;
+  font-size: 3rem; opacity: 0;
   color: var(--gold);
 }
-/* 1: Larry — skeleton */
-.pc-1::after { content: '💀'; }
-/* 2: Pip — pixie spark */
-.pc-2::after { content: '✨'; }
-/* 3: Flitter — bat */
-.pc-3::after { content: '🦇'; }
-/* 4: Hale Ward — shield */
-.pc-4::after { content: '🛡'; }
-/* 5: Glim — droplet / void */
-.pc-5::after { content: '🫧'; }
-/* 6: Buttoncap — mushroom */
-.pc-6::after { content: '🍄'; }
-/* 7: Lune — bow */
-.pc-7::after { content: '🏹'; }
-/* 8: Ren Hollow — wolf moon silver */
-.pc-8 { background: radial-gradient(ellipse at 50% 30%, #1e1a0a 0%, #0e0e06 60%, #080608 100%); }
-/* 9: Mossguard — deep forest stone */
-.pc-9 { background: radial-gradient(ellipse at 50% 30%, #0a2010 0%, #040e06 60%, #080608 100%); }
-/* 10: Asterius — arena sand red */
-.pc-10 { background: radial-gradient(ellipse at 50% 30%, #3a0e04 0%, #1a0602 60%, #080608 100%); }
-/* 11: Milo Quickpaw — warm brass */
-.pc-11 { background: radial-gradient(ellipse at 50% 30%, #2a1e04 0%, #140e02 60%, #080608 100%); }
-/* 12: Sir Rowan Bright — dawn gold */
-.pc-12 { background: radial-gradient(ellipse at 50% 30%, #2a1e06 0%, #14100a 60%, #080608 100%); }
-/* 13: Bramble — earthy brown */
-.pc-13 { background: radial-gradient(ellipse at 50% 30%, #2a1606 0%, #140a02 60%, #080608 100%); }
-/* 14: Nessa — deep water teal */
-.pc-14 { background: radial-gradient(ellipse at 50% 30%, #042832 0%, #021418 60%, #080608 100%); }
-/* 15: Roselle Thorn — deep crimson */
-.pc-15 { background: radial-gradient(ellipse at 50% 30%, #3a0414 0%, #1a0208 60%, #080608 100%); }
-/* 16: Mirella — arcane violet */
-.pc-16 { background: radial-gradient(ellipse at 50% 30%, #220a3a 0%, #100418 60%, #080608 100%); }
-/* 17: Graveward — bone white-blue */
-.pc-17 { background: radial-gradient(ellipse at 50% 30%, #0a1830 0%, #040a18 60%, #080608 100%); }
-/* 18: Skyrend — ember orange */
-.pc-18 { background: radial-gradient(ellipse at 50% 30%, #3a1204 0%, #1a0802 60%, #080608 100%); }
-/* 19: Sir Aurelion — bright gold */
-.pc-19 { background: radial-gradient(ellipse at 50% 30%, #2e1e04 0%, #160e02 60%, #080608 100%); }
-/* 20: Sylwen — woodland green */
-.pc-20 { background: radial-gradient(ellipse at 50% 30%, #0e2e0a 0%, #061606 60%, #080608 100%); }
-/* 21: Lord Drakar — volcanic red-gold */
-.pc-21 { background: radial-gradient(ellipse at 50% 30%, #2e1004 0%, #160802 60%, #080608 100%); }
-/* 22: Knave — void black with edge */
-.pc-22 { background: radial-gradient(ellipse at 50% 30%, #1a0808 0%, #0c0404 60%, #080608 100%); }
-/* 23: Zephyr — sky cerulean */
-.pc-23 { background: radial-gradient(ellipse at 50% 30%, #042e30 0%, #021618 60%, #080608 100%); }
-
-/* emoji placeholders for new characters */
-.pc-8::after  { content: '🐺'; }
-.pc-9::after  { content: '🗿'; }
-.pc-10::after { content: '🐂'; }
-.pc-11::after { content: '⚙️'; }
-.pc-12::after { content: '⚔️'; }
-.pc-13::after { content: '🌿'; }
-.pc-14::after { content: '🌊'; }
-.pc-15::after { content: '🌹'; }
-.pc-16::after { content: '🔮'; }
-.pc-17::after { content: '⚰️'; }
-.pc-18::after { content: '🐉'; }
-.pc-19::after { content: '🛡'; }
-.pc-20::after { content: '🏹'; }
-.pc-21::after { content: '🔥'; }
-.pc-22::after { content: '🪶'; }
-.pc-23::after { content: '🦅'; }
 
 /* grid pixel overlay */
 .portrait-img::before {
@@ -199,7 +166,7 @@
   opacity: 0.5;
 }
 .portrait-border-tl {
-  top: 0; left: 0;
+  top: 0; left: 0;  
   border-top: 1px solid var(--gold);
   border-left: 1px solid var(--gold);
 }
@@ -303,7 +270,7 @@
     linear-gradient(to right, transparent 70%, #080608 100%);
 }
 .lore-art::before {
-  content: 'Add\A character\A art here';
+  content: '';
   white-space: pre;
   text-align: center;
   position: absolute; inset: 0;
