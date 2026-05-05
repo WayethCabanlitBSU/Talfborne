@@ -96,21 +96,20 @@
 .pc-14 { background: url('images/Nessa.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #042832 0%, #021418 60%, #080608 100%); }
 /* 15: Roselle Thorn */
 .pc-15 { background: url('images/Roselle%20Thorn.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #3a0414 0%, #1a0208 60%, #080608 100%); }
-
-/* 17: Graveward */
-.pc-17 { background: url('images/Graveward.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #0a1830 0%, #040a18 60%, #080608 100%); }
-/* 18: Skyrend */
-.pc-18 { background: url('images/Skyrend.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #3a1204 0%, #1a0802 60%, #080608 100%); }
-/* 19: Sir Aurelion */
-.pc-19 { background: url('images/Sir%20Aurelion.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #2e1e04 0%, #160e02 60%, #080608 100%); }
-/* 20: Sylwen */
-.pc-20 { background: url('images/Sylwen.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #0e2e0a 0%, #061606 60%, #080608 100%); }
-/* 21: Lord Drakar */
-.pc-21 { background: url('images/Lord%20Drakar.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #2e1004 0%, #160802 60%, #080608 100%); }
-/* 22: Knave */
-.pc-22 { background: url('images/Knave.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #1a0808 0%, #0c0404 60%, #080608 100%); }
-/* 23: Zephyr */
-.pc-23 { background: url('images/Zephyr.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #042e30 0%, #021618 60%, #080608 100%); }
+/* 16: Graveward */
+.pc-16 { background: url('images/Graveward.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #0a1830 0%, #040a18 60%, #080608 100%); }
+/* 17: Skyrend */
+.pc-17 { background: url('images/Skyrend.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #3a1204 0%, #1a0802 60%, #080608 100%); }
+/* 18: Sir Aurelion */
+.pc-18 { background: url('images/Sir%20Aurelion.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #2e1e04 0%, #160e02 60%, #080608 100%); }
+/* 19: Sylwen */
+.pc-19 { background: url('images/Sylwen.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #0e2e0a 0%, #061606 60%, #080608 100%); }
+/* 20: Lord Drakar */
+.pc-20 { background: url('images/Lord%20Drakar.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #2e1004 0%, #160802 60%, #080608 100%); }
+/* 21: Knave */
+.pc-21 { background: url('images/Knave.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #1a0808 0%, #0c0404 60%, #080608 100%); }
+/* 22: Zephyr */
+.pc-22 { background: url('images/Zephyr.png') center/cover no-repeat, radial-gradient(ellipse at 50% 30%, #042e30 0%, #021618 60%, #080608 100%); }
 
 /* placeholder silhouette (show if portrait fails to load) */
 .portrait-img::after {
